@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000')
+    fetch('http://localhost:3000')
       .then(res => res.text())
       .then(text => setData(text));
   }, []);

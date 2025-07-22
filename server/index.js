@@ -2,6 +2,14 @@ require('dotenv').config(); // Loads .env variables
 const express = require('express');
 const app = express();
 
+const cors = require('cors');
+app.use(cors());
+
+
+
+const courseRoutes = require('./routes/courseRoutes');
+app.use('/api/courses', express.json(), courseRoutes);
+
 // Basic route
 app.get('/', (req, res) => {
   res.send(`Server running on port ${process.env.PORT}`);
