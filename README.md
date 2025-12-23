@@ -38,3 +38,9 @@ This static site can be deployed to:
 - Implement dark mode
 - Add portfolio gallery
 - Include blog section
+
+## Provide for the user a smooth and easy use of the website.
+-add AI assisst the user
+-add social media
+-add complains section
+-switcher light/dark for the user
